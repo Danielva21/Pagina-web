@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portada Oficial – Módulo de Mejora</title>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bfa2db", 
+                        "primary-dark": "#a78bbf",
+                        "secondary": "#f0e6fa",
+                        "accent": "#fbcfe8",
+                        "background": "#fdfaff",
+                        "surface": "#ffffff",
+                        "text-main": "#564f6f",
+                        "text-muted": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(191, 162, 219, 0.3)',
+                        'glow': '0 0 20px rgba(191, 162, 219, 0.4)'
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display antialiased bg-background text-text-main overflow-hidden selection:bg-primary selection:text-white">
+<div class="fixed inset-0 z-0 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-accent/20 rounded-full blur-[100px] opacity-60 mix-blend-multiply"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-primary/10 rounded-full blur-[120px] opacity-60 mix-blend-multiply"></div>
+<div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(#bfa2db 1px, transparent 1px), linear-gradient(to right, #bfa2db 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<div class="relative flex h-screen w-full flex-col z-10">
+<header class="flex items-center justify-between px-6 lg:px-12 py-6 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3 select-none">
+<div class="flex items-center justify-center h-10 w-10 rounded-xl bg-white shadow-sm text-primary ring-1 ring-primary/10">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight text-text-main">AmorOS <span class="font-normal opacity-50">Systems</span></h2>
+</div>
+<div class="hidden md:flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-primary/80 bg-white/60 px-4 py-1.5 rounded-full border border-white shadow-sm backdrop-blur-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-50"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                Secure Environment
+            </div>
+</header>
+<main class="flex flex-1 flex-col items-center justify-center px-6 pb-16">
+<div class="w-full max-w-3xl flex flex-col items-center text-center gap-10">
+<div class="relative group">
+<div class="absolute -inset-6 bg-gradient-to-tr from-accent/40 to-primary/40 opacity-0 group-hover:opacity-100 blur-xl rounded-full transition duration-1000 ease-in-out"></div>
+<div class="relative h-28 w-28 bg-white rounded-[2rem] flex items-center justify-center shadow-soft ring-1 ring-white/60 transform transition duration-500 group-hover:scale-105">
+<span class="material-symbols-outlined text-6xl text-primary font-light">deployed_code</span>
+</div>
+</div>
+<div class="space-y-6 flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/50 border border-primary/10 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>Versión 2.1</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-bold tracking-tight text-text-main leading-[1.1]">
+                        Módulo de Mejora de Experiencia 2026
+                    </h1>
+<p class="text-text-main/70 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                        Se ha detectado una actualización crítica para su sistema de felicidad. Este paquete incluye nuevas aventuras románticas, optimización de abrazos y corrección de la rutina diaria.
+                    </p>
+</div>
+<div class="pt-2 flex flex-col items-center gap-5 w-full">
+<button class="group relative flex w-full max-w-[280px] h-14 items-center justify-center gap-3 overflow-hidden rounded-2xl bg-primary text-white shadow-soft hover:bg-primary-dark hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<span class="text-lg font-bold tracking-wide relative z-10"><a href="html/Pagina_corporativa.html">Continuar</a></span>
+<span class="material-symbols-outlined relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+</button>
+<p class="text-xs text-text-main/30 font-mono tracking-tight">
+                        Tiempo estimado de instalación: Instantáneo
+                    </p>
+</div>
+</div>
+</main>
+<footer class="w-full py-8 text-center border-t border-primary/5">
+<p class="text-text-main/40 text-sm">
+                © 2026 Developed with <span class="material-symbols-outlined align-middle text-sm text-primary px-0.5">favorite</span> by Love Labs Inc.
+            </p>
+</footer>
+</div>
+
+</body></html>
